@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+* { box-sizing: border-box;}
+
+$myRed:rgb(222, 31, 66);
+$hoverRed:rgb(180, 31, 66);
+
+h1, h2, h3{
+  font-family: 'Crete Round';
+}
+
+nav{
+    background-color: $myRed;
+    margin-top: -10px;
+    ul {
+        background-color: $myRed;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        li {
+            vertical-align: top;
+            padding: 20px;
+            display: inline-block;
+            ul {
+                display: none;
+                position: absolute;
+                background-color: rgba(222, 31, 66, 0.6);
+                list-style: none;
+                padding: 0;
+            }
+            a > span{
+                color: white;
+                text-decoration: none;
+                font-family: 'Verdana, Geneva, sans-serif';
+            }
+        }
+    }
+}
+a {
+    color: $hoverRed;
+    text-decoration: none;
+}
+
+nav > ul > li:hover {
+    background-color: $hoverRed;
+}
+
+nav > ul > li:hover > ul { 
+    display: block;
+    li:hover {
+    background-color: rgba(180, 31, 66, 0.6);
+    }
+}
+
+.logo{
+    color: white;
+    display: inline-block;
+    font-family: 'Rock Salt';
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.highlight{
+    height: 600px;
+    padding-top: 400px;
+    background-image: url(what-if.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.highlight-review{
+    margin: 0 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}

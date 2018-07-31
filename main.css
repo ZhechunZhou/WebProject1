@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
+* { box-sizing: border-box;}
+
+h1, h2, h3{
+    font-family: 'Crete Round';
+}
+
+h1{
+    color: white;
+    background-color: rgb(222, 31, 66);
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+nav{
+    background-color: rgb(222, 31, 66);
+    margin-top: -10px;
+}
+
+nav > ul {
+    background-color: rgb(222, 31, 66);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+a {
+    color: rgb(180, 31, 66);
+    text-decoration: none;
+    font-family: 'Karla';
+}
+
+nav > ul > li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav > ul > li > a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav > ul > li:hover {
+    background-color: rgb(180, 31, 66);
+}
+
+nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    color: white;
+    list-style: none;
+    background-color: rgba(222, 31, 66, 0.6);
+    padding: 0;
+}
+
+nav > ul > li > ul > li {
+    vertical-align: top;
+
+}
+
+nav > ul > li > ul > li > a{
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav > ul > li:hover > ul { display: block;}
+nav > ul > li:hover > ul > li:hover {
+    background-color: rgba(180, 31, 66, 0.6);
+}
+
+.logo{
+    color: white;
+    display: inline-block;
+    font-family: 'Rock Salt';
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.highlight{
+    height: 600px;
+    padding-top: 400px;
+    background-image: url(what-if.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.highlight-review{
+    margin: 0 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+section{
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  
+section > h1{
+    margin-left: -30px;
+}
+  
+a{
+    color: rgb(180, 31, 66);
+    text-decoration: none;
+}
+  
+.review-text{
+    display: inline-block;
+    width: 790px;
+    margin-left: 30px;
+}
+  
+.hotest-authors{
+    background-color: lightgrey;
+    text-align: center;
+}
+  
+.destination{
+    background-color: white;
+    display: inline-block;
+    width: 225px;
+    height: 240px;
+    text-align: center;
+    margin: 0 5px;
+}
+  
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+  
+footer > section{
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+  
+.social{
+    font-size: 30px;
+}
+  
+    
+  
