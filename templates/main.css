@@ -48,7 +48,7 @@ nav > ul > li > a{
 }
 
 nav > ul > li > form{
-    padding: 20px;
+    padding: 15px;
 }
 
 input,button {
@@ -58,7 +58,7 @@ input,button {
 
 nav > ul > li > form > input{
     color: white;
-    height: 25px;
+    height: 29px;
     border:2px solid rgb(197, 70, 74);
     border-radius: 5px 0 0 5px;
     background:transparent;
@@ -68,7 +68,7 @@ nav > ul > li > form > input{
 
 nav > ul > li > form > button {
     color: white;
-    height: 25px;
+    height: 29px;
     background: rgb(197, 70, 74);
     border-radius: 0 5px 5px 0;
     width: 60px;
