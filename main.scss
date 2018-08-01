@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Rock+Salt);
 @import url(https://fonts.googleapis.com/css?family=Crete+Round);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
 * { box-sizing: border-box;}
 
 $myRed:rgb(222, 31, 66);
@@ -7,6 +9,19 @@ $hoverRed:rgb(180, 31, 66);
 
 h1, h2, h3{
   font-family: 'Crete Round';
+}
+
+h1{
+    color: white;
+    background-color: rgb(222, 31, 66);
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+a {
+    color: rgb(180, 31, 66);
+    text-decoration: none;
+    font-family: 'Karla';
 }
 
 nav{
@@ -20,16 +35,21 @@ nav{
         text-align: center;
         li {
             vertical-align: top;
-            padding: 20px;
             display: inline-block;
             ul {
                 display: none;
                 position: absolute;
-                background-color: rgba(222, 31, 66, 0.6);
                 list-style: none;
+                background-color: rgba(222, 31, 66, 0.6);
                 padding: 0;
+                li > a{
+                    display: inline-block;
+                    padding: 20px;
+                    color: white;
+                }
             }
-            a > span{
+            a{
+                padding: 20px;
                 color: white;
                 text-decoration: none;
                 font-family: 'Verdana, Geneva, sans-serif';
@@ -46,7 +66,7 @@ nav > ul > li:hover {
     background-color: $hoverRed;
 }
 
-nav > ul > li:hover > ul { 
+nav > ul > li:hover > ul {
     display: block;
     li:hover {
     background-color: rgba(180, 31, 66, 0.6);

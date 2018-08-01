@@ -17,7 +17,8 @@ h1{
 
 nav{
     background-color: rgb(222, 31, 66);
-    margin-top: -10px;
+    margin: -10px;
+    margin-bottom: 0px;
 }
 
 nav > ul {
@@ -46,7 +47,37 @@ nav > ul > li > a{
     padding: 20px;
 }
 
-nav > ul > li:hover {
+nav > ul > li > form{
+    padding: 20px;
+}
+
+input,button {
+    border:none;
+    outline:none;
+}
+
+nav > ul > li > form > input{
+    color: white;
+    height: 25px;
+    border:2px solid rgb(197, 70, 74);
+    border-radius: 5px 0 0 5px;
+    background:transparent;
+    width: 180px;
+    margin-right: 0;
+}
+
+nav > ul > li > form > button {
+    color: white;
+    height: 25px;
+    background: rgb(197, 70, 74);
+    border-radius: 0 5px 5px 0;
+    width: 60px;
+    margin:0;
+    cursor: pointer;
+    float: right;
+}
+
+nav > ul > li > a:hover {
     background-color: rgb(180, 31, 66);
 }
 
@@ -59,10 +90,6 @@ nav > ul > li > ul{
     padding: 0;
 }
 
-nav > ul > li > ul > li {
-    vertical-align: top;
-
-}
 
 nav > ul > li > ul > li > a{
     display: inline-block;
@@ -86,14 +113,40 @@ nav > ul > li:hover > ul > li:hover {
 
 .highlight{
     height: 600px;
-    padding-top: 400px;
     background-image: url(what-if.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.fa-chevron-right{
+    float: right;
+    margin-top: 250px;
+    margin-right: 40px;
+}
+
+.fa-chevron-left{
+    margin-top: 250px;
+    margin-left: 49px;
+}
+
+.circle {
+    color: white;
+    display: inline-block;
+    border-radius: 18px;
+    text-align: center;
+    padding: 10px 0;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.circle:hover{
+  color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .highlight-review{
-    margin: 0 0;
+    margin-top: 114px;
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
     height: 200px;
@@ -107,28 +160,28 @@ section{
     padding-left: 30px;
     padding-bottom: 30px;
   }
-  
+
 section > h1{
     margin-left: -30px;
 }
-  
+
 a{
     color: rgb(180, 31, 66);
     text-decoration: none;
 }
-  
+
 .review-text{
     display: inline-block;
     width: 790px;
     margin-left: 30px;
 }
-  
+
 .hotest-authors{
     background-color: lightgrey;
     text-align: center;
 }
-  
-.destination{
+
+.author{
     background-color: white;
     display: inline-block;
     width: 225px;
@@ -136,23 +189,20 @@ a{
     text-align: center;
     margin: 0 5px;
 }
-  
+
 footer{
     background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
 }
-  
+
 footer > section{
     display: inline-block;
     width: 200px;
     vertical-align: top;
 }
-  
+
 .social{
     font-size: 30px;
 }
-  
-    
-  
